@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Big Shoulders Display', sans-serif; */
+:root {
+  --primary1: hsl(31, 77%, 52%);
+  /* Bright orange  */
+  --primary2: hsl(184, 100%, 22%);
+  /* Dark cyan */
+  --primary3: hsl(179, 100%, 13%);
+  /* Very dark cyan */
+
+  --neutral1: hsla(0, 0%, 100%, 0.75);
+  /* Transparent white (paragraphs) */
+  --neutral2: hsl(0, 0%, 95%);
+  /* Very light gray (background, headings, buttons) */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 1rem;
+  padding: 0 1.4rem;
+}
+
+.wrapper {
+  min-width: 85%;
+  height: auto;
+}
+
+.card-grid {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 310px);
+  margin: auto;
+}
+
+.cell {
+  height: 30rem;
+}
+
+.sedan {
+  background-color: var(--primary1);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.suv {
+  background-color: var(--primary2);
+}
+
+.luxury {
+  background-color: var(--primary3);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.icon {
+  width: 70px;
+  margin: 2rem 3rem;
+}
+.icon img {
+  width: 100%;
+}
+.car-name {
+  color: var(--neutral2);
+  font-family: "Big Shoulders Display", sans-serif;
+  margin: 2rem;
+}
+.description {
+  color: var(--neutral1);
+  font-family: "Lexend Deca", sans-serif;
+  margin: 1rem 2rem;
+  line-height: 1.4;
+}
+
+.learn-btn {
+  outline: none;
+  border: none;
+  padding: 0.78rem 2rem;
+  border-radius: 30px;
+  margin-left: 2rem;
+  margin-bottom: 2.77rem;
+  background-color: var(--neutral2);
+  font-family: "Lexend Deca", sans-serif;
+  cursor: pointer;
+  margin-top: 4rem;
+}
+.sedan .learn-btn {
+    color: var(--primary1);
+  }
+  .sedan .learn-btn:hover{
+      border:2px solid var(--neutral2);
+      color: var(--neutral2);
+      background-color: var(--primary1);
+  }
+  .suv .learn-btn {
+    color: var(--primary2);
+  }
+  .suv .learn-btn:hover{
+    border:2px solid var(--neutral2);
+      color: var(--neutral2);
+      background-color: var(--primary2);
+  }
+  .luxury .learn-btn {
+    color: var(--primary3);
+  }
+  .luxury .learn-btn:hover{
+    border:2px solid var(--neutral2);
+      color: var(--neutral2);
+      background-color: var(--primary3);
+  }
+@media screen and (max-width: 992px) {
+  .wrapper {
+    margin-top: 1.88rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .cell {
+    height: 25rem;
+  }
+  .sedan {
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .luxury {
+    border-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .icon {
+    width: 80px;
+  }
+  .car-name {
+    font-size: 1.7rem;
+  }
+  .description {
+    width: 550px;
+    font-size: 1.1rem;
+  }
+  .learn-btn {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 645px) {
+  .description {
+    width: 400px;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cell {
+    height: 27rem;
+  }
+  .car-name {
+    font-size: 1.7rem;
+  }
+  .description {
+    width: 240px;
+  }
+}
