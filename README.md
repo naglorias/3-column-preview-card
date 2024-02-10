@@ -56,7 +56,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Github profile](github.com/naglorias)
+- Website - [Github profile](https://github.com/naglorias)
 - Frontend Mentor - [@naglorias](https://www.frontendmentor.io/profile/naglorias)
 - Twitter - [twitter profile](https://twitter.com/naglaRn)
 
